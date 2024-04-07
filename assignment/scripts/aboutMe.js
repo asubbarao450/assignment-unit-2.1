@@ -94,6 +94,19 @@ console.log(petStatus);
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
 
+let mostPets=0;
+
+if(pets>=friendsPets){
+mostPets=pets;
+
+}
+
+else if(friendsPets>=pets){
+mostPets=friendsPets;
+
+}
+
+console.log(mostPets);
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
@@ -102,12 +115,33 @@ console.log(petStatus);
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
+let luckyResult;
+let expression=luckyNumber;
+switch(expression) {
+  case 1:
+    luckyResult="First is the worst";
+    break;
+  case 2:
+    luckyResult="Second is the best";// code block
+    break;
+  case 3:
+    luckyResult="Third is the one with the polka dot dress";// code block
+    break;
+  default: 
+  luckyResult="Luck is what happens when preparation meets opportunity";
+    // code block
+  
+}
 
+
+
+console.log(luckyResult);
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
 
+const ternary=adventurous ? "Adventures are great!" : "How about we stay home?";
 
-
+console.log(ternary);
 
 
 
